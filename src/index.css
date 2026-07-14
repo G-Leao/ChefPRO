@@ -1,0 +1,48 @@
+/* Reset e Bases */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+:root {
+  --primary: #0056b3;        /* Azul Royal */
+  --primary-hover: #004494;
+  --secondary: #f0f4f8;      /* Azul Bem Claro (Background) */
+  --accent: #e1effe;         /* Azul suave para hover/detalhes */
+  --text-dark: #1e293b;      /* Azul Marinho quase preto */
+  --text-light: #64748b;     /* Azul Acinzentado */
+  --white: #ffffff;
+  --border: #dbeafe;         /* Bordas azuladas */
+}
+
+body {
+  background-color: var(--secondary);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.card {
+  background: var(--white);
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0, 86, 179, 0.05);
+}
